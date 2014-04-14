@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @todolist.name %>
+</p>
+
+<p>
+  <strong>Read:</strong>
+  <%= @todolist.read %>
+</p>
+
+<p>
+  <strong>Effort:</strong>
+  <%= @todolist.effort %>
+</p>
+
+<p>
+  <strong>Assigned to:</strong>
+  <%= @todolist.assigned_to %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @todolist.created_at %>
+</p>
+
+<p>
+  <strong>Due date:</strong>
+  <%= @todolist.due_date %>
+</p>
+
+<%= link_to 'Edit', edit_todolist_path(@todolist) %> |
+<%= link_to 'Back', todolists_path %>

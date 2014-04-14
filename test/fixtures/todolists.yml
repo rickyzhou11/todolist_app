@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  read: false
+  effort: MyString
+  assigned_to: MyString
+  created_at: 2014-04-14 19:41:34
+  due_date: 2014-04-14 19:41:34
+
+two:
+  name: MyString
+  read: false
+  effort: MyString
+  assigned_to: MyString
+  created_at: 2014-04-14 19:41:34
+  due_date: 2014-04-14 19:41:34

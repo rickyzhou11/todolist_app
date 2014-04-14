@@ -1,0 +1,37 @@
+<h1>Todo lists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Task Name</th>
+      <th>Read</th>
+      <th>Effort</th>
+      <th>Assigned to</th>
+      <th>Created at</th>
+      <th>Due date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @todolists.each do |todolist| %>
+      <tr>
+        <td><%= todolist.name %></td>
+        <td><%= todolist.read %></td>
+        <td><%= todolist.effort %></td>
+        <td><%= todolist.assigned_to %></td>
+        <td><%= todolist.created_at %></td>
+        <td><%= todolist.due_date %></td>
+        <td><%= link_to 'Show', todolist %></td>
+        <td><%= link_to 'Edit', edit_todolist_path(todolist) %></td>
+        <td><%= link_to 'Destroy', todolist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Todolist', new_todolist_path %>
